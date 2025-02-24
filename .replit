@@ -1,7 +1,7 @@
 modules = ["python-base-3.13"]
-run = " python3 main.py"
+run = " python3 Day2/snake_1/snake1.py"
 [nix]
 channel = "stable-24_05"
 
 [deployment]
-run = ["sh", "-c", "python3 main.py"]
+run = ["sh", "-c", "python3 Day2/snake_1/snake.py"]
