@@ -1,7 +1,7 @@
 import pygame
 
 #init pygame
-pygame.init 
+pygame.init() 
 
 #window dimensions
 width = 600
@@ -31,6 +31,28 @@ while running:
   """Draw to our Screen"""
   #clear screen
   screen.fill("white")
+
+  #draw rectangle
+  pygame.draw.rect(
+    screen, 
+    "blue", 
+    pygame.Rect((100,200), (100,50)))
+  
+  #Draw Circle
+  pygame.draw.circle(
+    screen, 
+    "green", 
+    (100,200), 
+    40)
+
+  #Draw a Line
+  pygame.draw.line(
+    screen, 
+    "red", 
+    (100,100), 
+    (200,200), 
+    5)
+
 
   #update screen
   pygame.display.flip()
